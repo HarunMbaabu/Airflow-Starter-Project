@@ -34,9 +34,13 @@ CREATE TABLE IF NOT EXISTS books (
 COPY books(name, author, user_rating, reviews, price, year, genre)
 FROM '/path/to/your/data/bestsellers with categories.csv'
 DELIMITER ',' CSV HEADER; 
-
 ```
 
+To execute this SQL script using PostgreSQL, you can use the psql command-line tool or any other PostgreSQL client of your choice.
 
 
-psql -U your_username -d your_database -f /path/to/your/src/convert_csv_to_table.sql
+```sql  
+
+psql -U your_username -d your_database -f /path/to/your/src/convert_csv_to_table.sql 
+
+```
